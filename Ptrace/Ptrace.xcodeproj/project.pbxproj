@@ -1,0 +1,1041 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0749FEB329F2491600840270 /* InjectSysctl.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0749FEB229F2491600840270 /* InjectSysctl.docc */; };
+		0749FEB929F2491600840270 /* InjectSysctl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0749FEAF29F2491600840270 /* InjectSysctl.framework */; };
+		0749FEC029F2491600840270 /* InjectSysctlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0749FEBF29F2491600840270 /* InjectSysctlTests.m */; };
+		0749FEC129F2491600840270 /* InjectSysctl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0749FEB129F2491600840270 /* InjectSysctl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0749FEC429F2491600840270 /* InjectSysctl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0749FEAF29F2491600840270 /* InjectSysctl.framework */; };
+		0749FEC529F2491600840270 /* InjectSysctl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0749FEAF29F2491600840270 /* InjectSysctl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		078B5F3629F230B10061DB4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 078B5F3529F230B10061DB4E /* AppDelegate.m */; };
+		078B5F3929F230B10061DB4E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 078B5F3829F230B10061DB4E /* SceneDelegate.m */; };
+		078B5F3C29F230B10061DB4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078B5F3B29F230B10061DB4E /* ViewController.m */; };
+		078B5F3F29F230B10061DB4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078B5F3D29F230B10061DB4E /* Main.storyboard */; };
+		078B5F4129F230B20061DB4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 078B5F4029F230B20061DB4E /* Assets.xcassets */; };
+		078B5F4429F230B20061DB4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078B5F4229F230B20061DB4E /* LaunchScreen.storyboard */; };
+		078B5F4729F230B20061DB4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 078B5F4629F230B20061DB4E /* main.m */; };
+		078B5F7B29F2317F0061DB4E /* MyPtraceHeader.docc in Sources */ = {isa = PBXBuildFile; fileRef = 078B5F7A29F2317F0061DB4E /* MyPtraceHeader.docc */; };
+		078B5F8129F2317F0061DB4E /* MyPtraceHeader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078B5F7729F2317F0061DB4E /* MyPtraceHeader.framework */; };
+		078B5F8829F2317F0061DB4E /* MyPtraceHeaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 078B5F8729F2317F0061DB4E /* MyPtraceHeaderTests.m */; };
+		078B5F8929F2317F0061DB4E /* MyPtraceHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 078B5F7929F2317F0061DB4E /* MyPtraceHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		078B5F8C29F2317F0061DB4E /* MyPtraceHeader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078B5F7729F2317F0061DB4E /* MyPtraceHeader.framework */; };
+		078B5F8D29F2317F0061DB4E /* MyPtraceHeader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 078B5F7729F2317F0061DB4E /* MyPtraceHeader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		078B5F9629F231A30061DB4E /* AntiDebugCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 078B5F9429F231A30061DB4E /* AntiDebugCode.h */; };
+		078B5F9729F231A30061DB4E /* AntiDebugCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 078B5F9529F231A30061DB4E /* AntiDebugCode.m */; };
+		07A5A59829F2499E00F880DB /* InjectSysctlcCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A5A59629F2499E00F880DB /* InjectSysctlcCode.h */; };
+		07A5A59929F2499E00F880DB /* InjectSysctlcCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5A59729F2499E00F880DB /* InjectSysctlcCode.m */; };
+		07A5A5B129F2586000F880DB /* CODE_OF_CONDUCT.md in Resources */ = {isa = PBXBuildFile; fileRef = 07A5A5AA29F2586000F880DB /* CODE_OF_CONDUCT.md */; };
+		07A5A5B229F2586000F880DB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 07A5A5AB29F2586000F880DB /* LICENSE */; };
+		07A5A5B329F2586000F880DB /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 07A5A5AC29F2586000F880DB /* fishhook.c */; };
+		07A5A5B429F2586000F880DB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 07A5A5AD29F2586000F880DB /* README.md */; };
+		07A5A5B529F2586000F880DB /* CONTRIBUTING.md in Resources */ = {isa = PBXBuildFile; fileRef = 07A5A5AE29F2586000F880DB /* CONTRIBUTING.md */; };
+		07A5A5B629F2586000F880DB /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A5A5AF29F2586000F880DB /* fishhook.h */; };
+		07A5A5B729F2586000F880DB /* fishhook.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 07A5A5B029F2586000F880DB /* fishhook.podspec */; };
+		07A5A5BA29F2713E00F880DB /* MyCheckCodesign.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5A5B929F2713E00F880DB /* MyCheckCodesign.m */; };
+		07A5A5BD29F273EE00F880DB /* InjectJailbroken.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5A5BC29F273EE00F880DB /* InjectJailbroken.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0749FEBA29F2491600840270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 078B5F2929F230B10061DB4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0749FEAE29F2491600840270;
+			remoteInfo = InjectSysctl;
+		};
+		0749FEBC29F2491600840270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 078B5F2929F230B10061DB4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 078B5F3029F230B10061DB4E;
+			remoteInfo = Ptrace;
+		};
+		0749FEC229F2491600840270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 078B5F2929F230B10061DB4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0749FEAE29F2491600840270;
+			remoteInfo = InjectSysctl;
+		};
+		078B5F8229F2317F0061DB4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 078B5F2929F230B10061DB4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 078B5F7629F2317F0061DB4E;
+			remoteInfo = MyPtraceHeader;
+		};
+		078B5F8429F2317F0061DB4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 078B5F2929F230B10061DB4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 078B5F3029F230B10061DB4E;
+			remoteInfo = Ptrace;
+		};
+		078B5F8A29F2317F0061DB4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 078B5F2929F230B10061DB4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 078B5F7629F2317F0061DB4E;
+			remoteInfo = MyPtraceHeader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		078B5F6C29F230F40061DB4E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				078B5F8D29F2317F0061DB4E /* MyPtraceHeader.framework in Embed Frameworks */,
+				0749FEC529F2491600840270 /* InjectSysctl.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0749FEAF29F2491600840270 /* InjectSysctl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InjectSysctl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0749FEB129F2491600840270 /* InjectSysctl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InjectSysctl.h; sourceTree = "<group>"; };
+		0749FEB229F2491600840270 /* InjectSysctl.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = InjectSysctl.docc; sourceTree = "<group>"; };
+		0749FEB829F2491600840270 /* InjectSysctlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InjectSysctlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0749FEBF29F2491600840270 /* InjectSysctlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InjectSysctlTests.m; sourceTree = "<group>"; };
+		078B5F3129F230B10061DB4E /* Ptrace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ptrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		078B5F3429F230B10061DB4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		078B5F3529F230B10061DB4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		078B5F3729F230B10061DB4E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		078B5F3829F230B10061DB4E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		078B5F3A29F230B10061DB4E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		078B5F3B29F230B10061DB4E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		078B5F3E29F230B10061DB4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		078B5F4029F230B20061DB4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		078B5F4329F230B20061DB4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		078B5F4529F230B20061DB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		078B5F4629F230B20061DB4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		078B5F7729F2317F0061DB4E /* MyPtraceHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyPtraceHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		078B5F7929F2317F0061DB4E /* MyPtraceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPtraceHeader.h; sourceTree = "<group>"; };
+		078B5F7A29F2317F0061DB4E /* MyPtraceHeader.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MyPtraceHeader.docc; sourceTree = "<group>"; };
+		078B5F8029F2317F0061DB4E /* MyPtraceHeaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPtraceHeaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		078B5F8729F2317F0061DB4E /* MyPtraceHeaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPtraceHeaderTests.m; sourceTree = "<group>"; };
+		078B5F9429F231A30061DB4E /* AntiDebugCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AntiDebugCode.h; sourceTree = "<group>"; };
+		078B5F9529F231A30061DB4E /* AntiDebugCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiDebugCode.m; sourceTree = "<group>"; };
+		078B5FA729F235C30061DB4E /* PtraceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PtraceHeader.h; sourceTree = "<group>"; };
+		07A5A59629F2499E00F880DB /* InjectSysctlcCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InjectSysctlcCode.h; sourceTree = "<group>"; };
+		07A5A59729F2499E00F880DB /* InjectSysctlcCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InjectSysctlcCode.m; sourceTree = "<group>"; };
+		07A5A5AA29F2586000F880DB /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		07A5A5AB29F2586000F880DB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		07A5A5AC29F2586000F880DB /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		07A5A5AD29F2586000F880DB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		07A5A5AE29F2586000F880DB /* CONTRIBUTING.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		07A5A5AF29F2586000F880DB /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		07A5A5B029F2586000F880DB /* fishhook.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fishhook.podspec; sourceTree = "<group>"; };
+		07A5A5B829F2713E00F880DB /* MyCheckCodesign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCheckCodesign.h; sourceTree = "<group>"; };
+		07A5A5B929F2713E00F880DB /* MyCheckCodesign.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCheckCodesign.m; sourceTree = "<group>"; };
+		07A5A5BB29F273EE00F880DB /* InjectJailbroken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InjectJailbroken.h; sourceTree = "<group>"; };
+		07A5A5BC29F273EE00F880DB /* InjectJailbroken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InjectJailbroken.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0749FEAC29F2491600840270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0749FEB529F2491600840270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0749FEB929F2491600840270 /* InjectSysctl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078B5F2E29F230B10061DB4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078B5F8C29F2317F0061DB4E /* MyPtraceHeader.framework in Frameworks */,
+				0749FEC429F2491600840270 /* InjectSysctl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078B5F7429F2317F0061DB4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078B5F7D29F2317F0061DB4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078B5F8129F2317F0061DB4E /* MyPtraceHeader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0749FEB029F2491600840270 /* InjectSysctl */ = {
+			isa = PBXGroup;
+			children = (
+				07A5A5A929F2586000F880DB /* fishhook-main */,
+				0749FEB129F2491600840270 /* InjectSysctl.h */,
+				0749FEB229F2491600840270 /* InjectSysctl.docc */,
+				07A5A59629F2499E00F880DB /* InjectSysctlcCode.h */,
+				07A5A59729F2499E00F880DB /* InjectSysctlcCode.m */,
+			);
+			path = InjectSysctl;
+			sourceTree = "<group>";
+		};
+		0749FEBE29F2491600840270 /* InjectSysctlTests */ = {
+			isa = PBXGroup;
+			children = (
+				0749FEBF29F2491600840270 /* InjectSysctlTests.m */,
+			);
+			path = InjectSysctlTests;
+			sourceTree = "<group>";
+		};
+		078B5F2829F230B10061DB4E = {
+			isa = PBXGroup;
+			children = (
+				078B5F3329F230B10061DB4E /* Ptrace */,
+				078B5F7829F2317F0061DB4E /* MyPtraceHeader */,
+				078B5F8629F2317F0061DB4E /* MyPtraceHeaderTests */,
+				0749FEB029F2491600840270 /* InjectSysctl */,
+				0749FEBE29F2491600840270 /* InjectSysctlTests */,
+				078B5F3229F230B10061DB4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		078B5F3229F230B10061DB4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				078B5F3129F230B10061DB4E /* Ptrace.app */,
+				078B5F7729F2317F0061DB4E /* MyPtraceHeader.framework */,
+				078B5F8029F2317F0061DB4E /* MyPtraceHeaderTests.xctest */,
+				0749FEAF29F2491600840270 /* InjectSysctl.framework */,
+				0749FEB829F2491600840270 /* InjectSysctlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		078B5F3329F230B10061DB4E /* Ptrace */ = {
+			isa = PBXGroup;
+			children = (
+				078B5F3429F230B10061DB4E /* AppDelegate.h */,
+				078B5F3529F230B10061DB4E /* AppDelegate.m */,
+				078B5F3729F230B10061DB4E /* SceneDelegate.h */,
+				078B5F3829F230B10061DB4E /* SceneDelegate.m */,
+				078B5F3A29F230B10061DB4E /* ViewController.h */,
+				078B5F3B29F230B10061DB4E /* ViewController.m */,
+				07A5A5BB29F273EE00F880DB /* InjectJailbroken.h */,
+				07A5A5BC29F273EE00F880DB /* InjectJailbroken.m */,
+				07A5A5B829F2713E00F880DB /* MyCheckCodesign.h */,
+				07A5A5B929F2713E00F880DB /* MyCheckCodesign.m */,
+				078B5F3D29F230B10061DB4E /* Main.storyboard */,
+				078B5F4029F230B20061DB4E /* Assets.xcassets */,
+				078B5F4229F230B20061DB4E /* LaunchScreen.storyboard */,
+				078B5F4529F230B20061DB4E /* Info.plist */,
+				078B5F4629F230B20061DB4E /* main.m */,
+			);
+			path = Ptrace;
+			sourceTree = "<group>";
+		};
+		078B5F7829F2317F0061DB4E /* MyPtraceHeader */ = {
+			isa = PBXGroup;
+			children = (
+				078B5F7929F2317F0061DB4E /* MyPtraceHeader.h */,
+				078B5F7A29F2317F0061DB4E /* MyPtraceHeader.docc */,
+				078B5FA729F235C30061DB4E /* PtraceHeader.h */,
+				078B5F9429F231A30061DB4E /* AntiDebugCode.h */,
+				078B5F9529F231A30061DB4E /* AntiDebugCode.m */,
+			);
+			path = MyPtraceHeader;
+			sourceTree = "<group>";
+		};
+		078B5F8629F2317F0061DB4E /* MyPtraceHeaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				078B5F8729F2317F0061DB4E /* MyPtraceHeaderTests.m */,
+			);
+			path = MyPtraceHeaderTests;
+			sourceTree = "<group>";
+		};
+		07A5A5A929F2586000F880DB /* fishhook-main */ = {
+			isa = PBXGroup;
+			children = (
+				07A5A5AA29F2586000F880DB /* CODE_OF_CONDUCT.md */,
+				07A5A5AB29F2586000F880DB /* LICENSE */,
+				07A5A5AC29F2586000F880DB /* fishhook.c */,
+				07A5A5AD29F2586000F880DB /* README.md */,
+				07A5A5AE29F2586000F880DB /* CONTRIBUTING.md */,
+				07A5A5AF29F2586000F880DB /* fishhook.h */,
+				07A5A5B029F2586000F880DB /* fishhook.podspec */,
+			);
+			path = "fishhook-main";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0749FEAA29F2491600840270 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A5A59829F2499E00F880DB /* InjectSysctlcCode.h in Headers */,
+				0749FEC129F2491600840270 /* InjectSysctl.h in Headers */,
+				07A5A5B629F2586000F880DB /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078B5F7229F2317F0061DB4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078B5F8929F2317F0061DB4E /* MyPtraceHeader.h in Headers */,
+				078B5F9629F231A30061DB4E /* AntiDebugCode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0749FEAE29F2491600840270 /* InjectSysctl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0749FECA29F2491600840270 /* Build configuration list for PBXNativeTarget "InjectSysctl" */;
+			buildPhases = (
+				0749FEAA29F2491600840270 /* Headers */,
+				0749FEAB29F2491600840270 /* Sources */,
+				0749FEAC29F2491600840270 /* Frameworks */,
+				0749FEAD29F2491600840270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InjectSysctl;
+			productName = InjectSysctl;
+			productReference = 0749FEAF29F2491600840270 /* InjectSysctl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0749FEB729F2491600840270 /* InjectSysctlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0749FECB29F2491600840270 /* Build configuration list for PBXNativeTarget "InjectSysctlTests" */;
+			buildPhases = (
+				0749FEB429F2491600840270 /* Sources */,
+				0749FEB529F2491600840270 /* Frameworks */,
+				0749FEB629F2491600840270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0749FEBB29F2491600840270 /* PBXTargetDependency */,
+				0749FEBD29F2491600840270 /* PBXTargetDependency */,
+			);
+			name = InjectSysctlTests;
+			productName = InjectSysctlTests;
+			productReference = 0749FEB829F2491600840270 /* InjectSysctlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		078B5F3029F230B10061DB4E /* Ptrace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078B5F4A29F230B20061DB4E /* Build configuration list for PBXNativeTarget "Ptrace" */;
+			buildPhases = (
+				078B5F2D29F230B10061DB4E /* Sources */,
+				078B5F2E29F230B10061DB4E /* Frameworks */,
+				078B5F2F29F230B10061DB4E /* Resources */,
+				078B5F6C29F230F40061DB4E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				078B5F8B29F2317F0061DB4E /* PBXTargetDependency */,
+				0749FEC329F2491600840270 /* PBXTargetDependency */,
+			);
+			name = Ptrace;
+			productName = Ptrace;
+			productReference = 078B5F3129F230B10061DB4E /* Ptrace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		078B5F7629F2317F0061DB4E /* MyPtraceHeader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078B5F8E29F2317F0061DB4E /* Build configuration list for PBXNativeTarget "MyPtraceHeader" */;
+			buildPhases = (
+				078B5F7229F2317F0061DB4E /* Headers */,
+				078B5F7329F2317F0061DB4E /* Sources */,
+				078B5F7429F2317F0061DB4E /* Frameworks */,
+				078B5F7529F2317F0061DB4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyPtraceHeader;
+			productName = MyPtraceHeader;
+			productReference = 078B5F7729F2317F0061DB4E /* MyPtraceHeader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		078B5F7F29F2317F0061DB4E /* MyPtraceHeaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078B5F9129F2317F0061DB4E /* Build configuration list for PBXNativeTarget "MyPtraceHeaderTests" */;
+			buildPhases = (
+				078B5F7C29F2317F0061DB4E /* Sources */,
+				078B5F7D29F2317F0061DB4E /* Frameworks */,
+				078B5F7E29F2317F0061DB4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				078B5F8329F2317F0061DB4E /* PBXTargetDependency */,
+				078B5F8529F2317F0061DB4E /* PBXTargetDependency */,
+			);
+			name = MyPtraceHeaderTests;
+			productName = MyPtraceHeaderTests;
+			productReference = 078B5F8029F2317F0061DB4E /* MyPtraceHeaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		078B5F2929F230B10061DB4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0749FEAE29F2491600840270 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					0749FEB729F2491600840270 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 078B5F3029F230B10061DB4E;
+					};
+					078B5F3029F230B10061DB4E = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					078B5F7629F2317F0061DB4E = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					078B5F7F29F2317F0061DB4E = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 078B5F3029F230B10061DB4E;
+					};
+				};
+			};
+			buildConfigurationList = 078B5F2C29F230B10061DB4E /* Build configuration list for PBXProject "Ptrace" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 078B5F2829F230B10061DB4E;
+			productRefGroup = 078B5F3229F230B10061DB4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				078B5F3029F230B10061DB4E /* Ptrace */,
+				078B5F7629F2317F0061DB4E /* MyPtraceHeader */,
+				078B5F7F29F2317F0061DB4E /* MyPtraceHeaderTests */,
+				0749FEAE29F2491600840270 /* InjectSysctl */,
+				0749FEB729F2491600840270 /* InjectSysctlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0749FEAD29F2491600840270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A5A5B429F2586000F880DB /* README.md in Resources */,
+				07A5A5B729F2586000F880DB /* fishhook.podspec in Resources */,
+				07A5A5B229F2586000F880DB /* LICENSE in Resources */,
+				07A5A5B529F2586000F880DB /* CONTRIBUTING.md in Resources */,
+				07A5A5B129F2586000F880DB /* CODE_OF_CONDUCT.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0749FEB629F2491600840270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078B5F2F29F230B10061DB4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078B5F4429F230B20061DB4E /* LaunchScreen.storyboard in Resources */,
+				078B5F4129F230B20061DB4E /* Assets.xcassets in Resources */,
+				078B5F3F29F230B10061DB4E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078B5F7529F2317F0061DB4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078B5F7E29F2317F0061DB4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0749FEAB29F2491600840270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0749FEB329F2491600840270 /* InjectSysctl.docc in Sources */,
+				07A5A5B329F2586000F880DB /* fishhook.c in Sources */,
+				07A5A59929F2499E00F880DB /* InjectSysctlcCode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0749FEB429F2491600840270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0749FEC029F2491600840270 /* InjectSysctlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078B5F2D29F230B10061DB4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078B5F3C29F230B10061DB4E /* ViewController.m in Sources */,
+				078B5F3629F230B10061DB4E /* AppDelegate.m in Sources */,
+				078B5F4729F230B20061DB4E /* main.m in Sources */,
+				07A5A5BD29F273EE00F880DB /* InjectJailbroken.m in Sources */,
+				07A5A5BA29F2713E00F880DB /* MyCheckCodesign.m in Sources */,
+				078B5F3929F230B10061DB4E /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078B5F7329F2317F0061DB4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078B5F9729F231A30061DB4E /* AntiDebugCode.m in Sources */,
+				078B5F7B29F2317F0061DB4E /* MyPtraceHeader.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078B5F7C29F2317F0061DB4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078B5F8829F2317F0061DB4E /* MyPtraceHeaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0749FEBB29F2491600840270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0749FEAE29F2491600840270 /* InjectSysctl */;
+			targetProxy = 0749FEBA29F2491600840270 /* PBXContainerItemProxy */;
+		};
+		0749FEBD29F2491600840270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 078B5F3029F230B10061DB4E /* Ptrace */;
+			targetProxy = 0749FEBC29F2491600840270 /* PBXContainerItemProxy */;
+		};
+		0749FEC329F2491600840270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0749FEAE29F2491600840270 /* InjectSysctl */;
+			targetProxy = 0749FEC229F2491600840270 /* PBXContainerItemProxy */;
+		};
+		078B5F8329F2317F0061DB4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 078B5F7629F2317F0061DB4E /* MyPtraceHeader */;
+			targetProxy = 078B5F8229F2317F0061DB4E /* PBXContainerItemProxy */;
+		};
+		078B5F8529F2317F0061DB4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 078B5F3029F230B10061DB4E /* Ptrace */;
+			targetProxy = 078B5F8429F2317F0061DB4E /* PBXContainerItemProxy */;
+		};
+		078B5F8B29F2317F0061DB4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 078B5F7629F2317F0061DB4E /* MyPtraceHeader */;
+			targetProxy = 078B5F8A29F2317F0061DB4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		078B5F3D29F230B10061DB4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				078B5F3E29F230B10061DB4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		078B5F4229F230B20061DB4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				078B5F4329F230B20061DB4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0749FEC629F2491600840270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YTHAA38XPG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.InjectSysctl;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0749FEC729F2491600840270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YTHAA38XPG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.InjectSysctl;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0749FEC829F2491600840270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.InjectSysctlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ptrace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ptrace";
+			};
+			name = Debug;
+		};
+		0749FEC929F2491600840270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.InjectSysctlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ptrace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ptrace";
+			};
+			name = Release;
+		};
+		078B5F4829F230B20061DB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		078B5F4929F230B20061DB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		078B5F4B29F230B20061DB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YTHAA38XPG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ptrace/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-Wl,-sectcreate,__RESTRICT,__restrict,/dev/null";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceshi.zjz1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		078B5F4C29F230B20061DB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YTHAA38XPG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ptrace/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-Wl,-sectcreate,__RESTRICT,__restrict,/dev/null";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceshi.zjz1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		078B5F8F29F2317F0061DB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YTHAA38XPG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = test.MyPtraceHeader;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		078B5F9029F2317F0061DB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YTHAA38XPG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = test.MyPtraceHeader;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		078B5F9229F2317F0061DB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YTHAA38XPG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MyPtraceHeaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ptrace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ptrace";
+			};
+			name = Debug;
+		};
+		078B5F9329F2317F0061DB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YTHAA38XPG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MyPtraceHeaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ptrace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ptrace";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0749FECA29F2491600840270 /* Build configuration list for PBXNativeTarget "InjectSysctl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0749FEC629F2491600840270 /* Debug */,
+				0749FEC729F2491600840270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0749FECB29F2491600840270 /* Build configuration list for PBXNativeTarget "InjectSysctlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0749FEC829F2491600840270 /* Debug */,
+				0749FEC929F2491600840270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078B5F2C29F230B10061DB4E /* Build configuration list for PBXProject "Ptrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078B5F4829F230B20061DB4E /* Debug */,
+				078B5F4929F230B20061DB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078B5F4A29F230B20061DB4E /* Build configuration list for PBXNativeTarget "Ptrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078B5F4B29F230B20061DB4E /* Debug */,
+				078B5F4C29F230B20061DB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078B5F8E29F2317F0061DB4E /* Build configuration list for PBXNativeTarget "MyPtraceHeader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078B5F8F29F2317F0061DB4E /* Debug */,
+				078B5F9029F2317F0061DB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078B5F9129F2317F0061DB4E /* Build configuration list for PBXNativeTarget "MyPtraceHeaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078B5F9229F2317F0061DB4E /* Debug */,
+				078B5F9329F2317F0061DB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 078B5F2929F230B10061DB4E /* Project object */;
+}
